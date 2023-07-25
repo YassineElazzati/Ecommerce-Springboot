@@ -15,6 +15,6 @@ public class ArticleController {
 	
 	@GetMapping("/Article")
 	public Iterable<Article> getArticle(){
-		return ArticleService.getArticle();
+		return ArticleService.getArticles();
 	}
 }

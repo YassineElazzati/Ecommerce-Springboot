@@ -7,41 +7,41 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="Article")
+@Table(name="article", schema = "public")
 public class Article {
 	
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int Id_Article;
+    private int id_article;
     
     
-    private String Image ; 
-    private String QuantitéStock;
+    private String image ; 
+    private String quantitestock;
     
 
     
 	public int getId_Article() {
-		return Id_Article;
+		return id_article;
 	}
 	public void setId_Article(int id_Article) {
-		Id_Article = id_Article;
+		id_article = id_Article;
 	}
 	public String getImage() {
-		return Image;
+		return image;
 	}
 	public void setImage(String image) {
-		Image = image;
+		image = image;
 	}
 	public String getQuantitéStock() {
-		return QuantitéStock;
+		return quantitestock;
 	}
 	public void setQuantitéStock(String quantitéStock) {
-		QuantitéStock = quantitéStock;
+		quantitestock = quantitéStock;
 	}
 	
 	@Override
 	public String toString() {
-		return "Article [Id_Article=" + Id_Article + ", Image=" + Image + ", QuantitéStock=" + QuantitéStock
+		return "Article [Id_Article=" + id_article + ", Image=" + image + ", QuantitéStock=" + quantitestock
 				;
 	}	    
 }
