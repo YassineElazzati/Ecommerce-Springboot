@@ -4,24 +4,19 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name="typearticle")
 public class typearticle {
 	
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int Id_Categorie;
 	private int Id_TypeArticle;
 	
 	private String Libelle;
 	private String Matière;
-	private int Prix;
-	public int getId_Categorie() {
-		return Id_Categorie;
-	}
-	public void setId_Categorie(int id_Categorie) {
-		Id_Categorie = id_Categorie;
-	}
+	private double Prix;
 	public int getId_TypeArticle() {
 		return Id_TypeArticle;
 	}
@@ -40,15 +35,15 @@ public class typearticle {
 	public void setMatière(String matière) {
 		Matière = matière;
 	}
-	public int getPrix() {
+	public double getPrix() {
 		return Prix;
 	}
-	public void setPrix(int prix) {
+	public void setPrix(double prix) {
 		Prix = prix;
 	}
 	@Override
 	public String toString() {
-		return "typearticle [Id_Categorie=" + Id_Categorie + ", Id_TypeArticle=" + Id_TypeArticle + ", Libelle="
+		return "typearticle [Id_TypeArticle=" + Id_TypeArticle + ", Libelle="
 				+ Libelle + ", Matière=" + Matière + ", Prix=" + Prix + "]";
 	}
 	

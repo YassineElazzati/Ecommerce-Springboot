@@ -4,13 +4,15 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name="public.utilisateur")
+
 public class utilisateur {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int Id_Role;	
 	private int Id_Utilisateur;
 	
 	private String Mail;
@@ -18,12 +20,7 @@ public class utilisateur {
 	private String Password;
 	private String Prenom;
 	private String Telephone;
-	public int getId_Role() {
-		return Id_Role;
-	}
-	public void setId_Role(int id_Role) {
-		Id_Role = id_Role;
-	}
+	
 	public int getId_Utilisateur() {
 		return Id_Utilisateur;
 	}
@@ -63,11 +60,7 @@ public class utilisateur {
 	
 	@Override
 	public String toString() {
-		return "utilisateur [Id_Role=" + Id_Role + ", Id_Utilisateur=" + Id_Utilisateur + ", Mail=" + Mail + ", Nom="
+		return "utilisateur [Id_Utilisateur=" + Id_Utilisateur + ", Mail=" + Mail + ", Nom="
 				+ Nom + ", Password=" + Password + ", Prenom=" + Prenom + ", Telephone=" + Telephone + "]";
 	}	
-	
-	
-	
-	
 }

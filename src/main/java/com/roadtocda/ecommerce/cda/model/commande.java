@@ -4,8 +4,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name="commande")
 public class commande {
 	
 	@Id 
@@ -17,8 +19,6 @@ public class commande {
  	private	double Frais_de_livraison;
  	private String	Adresse_postal;
  	private int Quantite;
- 	private int  Id_Utilisateur;
- 	private int Id_Status;
 	public int getId_Commande() {
 		return Id_Commande;
 	}
@@ -49,23 +49,11 @@ public class commande {
 	public void setQuantite(int quantite) {
 		Quantite = quantite;
 	}
-	public int getId_Utilisateur() {
-		return Id_Utilisateur;
-	}
-	public void setId_Utilisateur(int id_Utilisateur) {
-		Id_Utilisateur = id_Utilisateur;
-	}
-	public int getId_Status() {
-		return Id_Status;
-	}
-	public void setId_Status(int id_Status) {
-		Id_Status = id_Status;
-	}
 	@Override
 	public String toString() {
 		return "commande [Id_Commande=" + Id_Commande + ", Total=" + Total + ", Frais_de_livraison="
 				+ Frais_de_livraison + ", Adresse_postal=" + Adresse_postal + ", Quantite=" + Quantite
-				+ ", Id_Utilisateur=" + Id_Utilisateur + ", Id_Status=" + Id_Status + "]";
+				;
 	}
  	
  	
