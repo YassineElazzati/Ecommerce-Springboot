@@ -8,7 +8,4 @@ public class ArticleService {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-
-
 }

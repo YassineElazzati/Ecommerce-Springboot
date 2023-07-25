@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.roadtocda.ecommerce.cda.model.Article;
 import com.roadtocda.ecommerce.cda.service.ArticleService;
 
-
 @RestController
-class ArticleController {
+public class ArticleController {
+
 	@Autowired
 	private ArticleService ArticleService;
 	
