@@ -11,6 +11,7 @@ import com.roadtocda.ecommerce.cda.repository.ArticleRepository;
 @Service
 public class ArticleService {
 
+<<<<<<< HEAD
 		@Autowired
 		private ArticleRepository artRepository;
 		
@@ -33,3 +34,10 @@ public class ArticleService {
 
 
 }
+=======
+	public Iterable<Article> getArticle() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
+>>>>>>> 56e618b41eec1e1c5ec96a215a6ca213449641dd
