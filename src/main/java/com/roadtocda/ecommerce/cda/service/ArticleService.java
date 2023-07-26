@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.roadtocda.ecommerce.cda.model.Article;
 import com.roadtocda.ecommerce.cda.repository.ArticleRepository;
+import com.roadtocda.ecommerce.cda.repository.TypearticleRepository;
 
 @Service
 public class ArticleService {
@@ -14,6 +15,9 @@ public class ArticleService {
 
 		@Autowired
 		private ArticleRepository artRepository;
+		
+		@Autowired
+		private TypearticleRepository typearticleRepository;
 		
 		public Optional<Article>getArticle(final long id ){
 			return artRepository.findById(id);
