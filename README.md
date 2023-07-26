@@ -8,12 +8,12 @@ This exercise consists of creating an e-commerce site from A to Z.
 
 # DAO
 
-## MAquette Figma 
+## Modèle Figma 
 
 <img width="635" alt="image" src="https://github.com/YassineElazzati/Ecommerce-Springboot/assets/131854031/3eb27c36-ceeb-44e9-8ed1-b3dbb569d7bf">
 
 
-## Structure de l'application
+## Structure of the application
 
 My database was created on mySQL and then transferred to neon so that my collaborators could use it and modify it if necessary.
 I programmed my project with Spring Intialzr:
