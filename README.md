@@ -24,15 +24,7 @@ I used hybernate to do my DAO to optimize my code.
 
 ## Installation
 
-Connecting a mySQL database with a Java console database thanks to DriverManager Requires a driver Installation in the Path Module Allows connection with JDBC
 
-Addition of the .jar file
-
-Link to the .jar file
-
-Material
-
-Creation de class Article
 
 ## Licence
 
