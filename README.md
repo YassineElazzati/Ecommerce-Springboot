@@ -6,8 +6,6 @@ This is an Exercise that our Mentor @Nahben advised us to learn about Spring Boo
 
 This exercise consists of creating an e-commerce site from A to Z.
 
-# DAO
-
 ## Modèle Figma 
 
 <img width="635" alt="image" src="https://github.com/YassineElazzati/Ecommerce-Springboot/assets/131854031/3eb27c36-ceeb-44e9-8ed1-b3dbb569d7bf">
