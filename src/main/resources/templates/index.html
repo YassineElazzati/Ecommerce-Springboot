@@ -18,7 +18,7 @@
               <h2 th:text="${article.image}" class="text-primary"></h2>
               <h3 th:text="${article.typearticle.libelle}"></h3>
               <p th:text="'Matiere : ' + ${article.typearticle.matiere}"></p>
-              <p th:text="'Prix : ' + ${article.typearticle.prix}"></p>
+              <p th:text="'Prix : ' + ${article.typearticle.prix} + '€'"></p>
               <p th:text="'Taille : ' + ${article.taille.libelle}"></p>
               <p th:text="'Quantité : ' + ${article.quantitestock}"></p>
             </div>
