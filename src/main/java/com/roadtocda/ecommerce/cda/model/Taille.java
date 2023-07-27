@@ -37,6 +37,5 @@ public class Taille {
 		return "taille [Id_Taille=" + id_taille + ", Libelle=" + libelle + "]";
 	}
 	
-		
 	
 }

@@ -22,7 +22,7 @@ public class ArticleService {
 		private TypearticleRepository typearticleRepository;
 		
 		@Autowired
-		private TailleRepository taille;
+		private TailleRepository tailleRepository;
 		
 		
 		public Optional<Article>getArticle(final long id ){
@@ -49,11 +49,12 @@ public class ArticleService {
 		public void setTypearticleRepository(TypearticleRepository typearticleRepository) {
 			this.typearticleRepository = typearticleRepository;
 		}
-		public TailleRepository getTaille() {
-			return taille;
+		
+		public TailleRepository getTailleRepository() {
+			return tailleRepository;
 		}
-		public void setTaille(TailleRepository taille) {
-			this.taille = taille;
+		public void setTailleRepository(TailleRepository tailleRepository) {
+			this.tailleRepository = tailleRepository;
 		}
 }
 

@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -16,6 +18,10 @@ public class Typearticle {
 	private String libelle;
 	private String matiere;
 	private double prix;
+	
+	@ManyToOne
+	@JoinColumn(name="id_categorie")
+	private Categorie categorie;
 	
 	public int getId_TypeArticle() {
 		return id_typearticle;
@@ -41,6 +47,14 @@ public class Typearticle {
 	public void setPrix(double prix) {
 		this.prix = prix;
 	}
+	
+	public Categorie getCategorie() {
+		return categorie;
+	}
+	public void setTaille(Categorie categorie) {
+		this.categorie = categorie;
+	}
+	
 	@Override
 	public String toString() {
 		return "typearticle [Id_TypeArticle=" + id_typearticle + ", Libelle="
