@@ -12,6 +12,48 @@ public class Panier {
 
 	@Id
 	 @GeneratedValue(strategy = GenerationType.IDENTITY)
+<<<<<<< HEAD
+	private int Id_Article;
+	private int Id_Utilisateur;
+	
+	
+	private int Quantite;
+
+
+	public int getId_Article() {
+		return Id_Article;
+	}
+
+
+	public void setId_Article(int id_Article) {
+		Id_Article = id_Article;
+	}
+
+
+	public int getId_Utilisateur() {
+		return Id_Utilisateur;
+	}
+
+
+	public void setId_Utilisateur(int id_Utilisateur) {
+		Id_Utilisateur = id_Utilisateur;
+	}
+
+
+	public int getQuantite() {
+		return Quantite;
+	}
+
+
+	public void setQuantite(int quantite) {
+		Quantite = quantite;
+	}
+
+
+	@Override
+	public String toString() {
+		return "panier [Id_Article=" + Id_Article + ", Id_Utilisateur=" + Id_Utilisateur + ", Quantite=" + Quantite
+=======
 	private int id_article;
 	private int id_utilisateur;
 	private int quantite;
@@ -50,6 +92,7 @@ public class Panier {
 	@Override
 	public String toString() {
 		return "panier [Id_Article=" + id_article + ", Id_Utilisateur=" + id_utilisateur + ", Quantite=" + quantite
+>>>>>>> branch 'main' of https://github.com/YassineElazzati/Ecommerce-Springboot.git
 				+ "]";
 	}
 	

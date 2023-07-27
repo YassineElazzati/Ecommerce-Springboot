@@ -13,6 +13,29 @@ public class Categorie {
 	
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+<<<<<<< HEAD
+	private int  Id_Categorie;
+    
+    
+	private String Libelle;
+	
+	public int getId_Categorie() {
+		return Id_Categorie;
+	}
+	public void setId_Categorie(int id_Categorie) {
+		Id_Categorie = id_Categorie;
+	}
+	public String getLibelle() {
+		return Libelle;
+	}
+	public void setLibelle(String libelle) {
+		Libelle = libelle;
+	}
+	
+	@Override
+	public String toString() {
+		return "categorie [Id_Categorie=" + Id_Categorie + ", Libelle=" + Libelle + "]";
+=======
 	private int  id_categorie;
     private String libelle;
 	
@@ -32,6 +55,7 @@ public class Categorie {
 	@Override
 	public String toString() {
 		return "categorie [Id_Categorie=" + id_categorie + ", Libelle=" + libelle + "]";
+>>>>>>> branch 'main' of https://github.com/YassineElazzati/Ecommerce-Springboot.git
 	}
 	
 	

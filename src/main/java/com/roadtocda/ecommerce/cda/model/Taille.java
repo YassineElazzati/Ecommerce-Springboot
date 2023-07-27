@@ -12,6 +12,37 @@ public class Taille {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+<<<<<<< HEAD
+	private int Id_Taille;
+	
+	
+	private String Libelle;
+
+
+	public int getId_Taille() {
+		return Id_Taille;
+	}
+
+
+	public void setId_Taille(int id_Taille) {
+		Id_Taille = id_Taille;
+	}
+
+
+	public String getLibelle() {
+		return Libelle;
+	}
+
+
+	public void setLibelle(String libelle) {
+		Libelle = libelle;
+	}
+
+
+	@Override
+	public String toString() {
+		return "taille [Id_Taille=" + Id_Taille + ", Libelle=" + Libelle + "]";
+=======
 	private int id_taille;
 	private String libelle;
 
@@ -35,6 +66,7 @@ public class Taille {
 	@Override
 	public String toString() {
 		return "taille [Id_Taille=" + id_taille + ", Libelle=" + libelle + "]";
+>>>>>>> branch 'main' of https://github.com/YassineElazzati/Ecommerce-Springboot.git
 	}
 	
 		

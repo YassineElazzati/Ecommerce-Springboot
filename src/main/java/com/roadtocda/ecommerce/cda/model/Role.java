@@ -12,6 +12,25 @@ public class Role {
 	
 	@Id
 	 @GeneratedValue(strategy = GenerationType.IDENTITY)
+<<<<<<< HEAD
+	private int Id_Role;
+	private String Designation;
+	public int getId_Role() {
+		return Id_Role;
+	}
+	public void setId_Role(int id_Role) {
+		Id_Role = id_Role;
+	}
+	public String getDesignation() {
+		return Designation;
+	}
+	public void setDesignation(String designation) {
+		Designation = designation;
+	}
+	@Override
+	public String toString() {
+		return "role [Id_Role=" + Id_Role + ", Designation=" + Designation + "]";
+=======
 	private int id_role;
 	private String designation;
 	
@@ -30,6 +49,7 @@ public class Role {
 	@Override
 	public String toString() {
 		return "role [Id_Role=" + id_role + ", Designation=" + designation + "]";
+>>>>>>> branch 'main' of https://github.com/YassineElazzati/Ecommerce-Springboot.git
 	}
 	
 	
