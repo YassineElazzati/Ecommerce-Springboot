@@ -39,9 +39,14 @@ public class ArticleController {
 	public Iterable<Typearticle> getTypearticles(){
 		return typearticleService.getTypearticles();
 	}
-//	@GetMapping("/TypeArticle")
-//	public String TypeArticle(@RequestParam(name="name"))
-//	
+	
+	@GetMapping("/TypeArticle")
+	public String TypeArticle(@RequestParam(name="name", required = false, defaultValue = "ehehe") String name, Model model) {
+		model.addAttribute("name", name);
+		model.addAttribute("LesTypes", typearticleService.getTypearticles());
+		return "typearticle";
+	}
+	
 	
 	@GetMapping("/Tailles")
 	public Iterable<Taille> getTailles(){
