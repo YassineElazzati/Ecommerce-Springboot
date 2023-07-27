@@ -15,13 +15,12 @@ public class Utilisateur {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int Id_Utilisateur;
-	
-	private String Mail;
-	private String Nom;
-	private String Password;
-	private String Prenom;
-	private String Telephone;
+	private int id_utilisateur;
+	private String mail;
+	private String nom;
+	private String password;
+	private String prenom;
+	private String telephone;
 	
     @ManyToOne // Relation Many-to-One, un article appartient à une catégorie
     @JoinColumn(name = "id_role") // Clé étrangère pour relier à la catégorie
@@ -35,45 +34,45 @@ public class Utilisateur {
 	}
 	
 	public int getId_Utilisateur() {
-		return Id_Utilisateur;
+		return id_utilisateur;
 	}
 	public void setId_Utilisateur(int id_Utilisateur) {
-		Id_Utilisateur = id_Utilisateur;
+		id_utilisateur = id_Utilisateur;
 	}
 	public String getMail() {
-		return Mail;
+		return mail;
 	}
 	public void setMail(String mail) {
-		Mail = mail;
+		this.mail = mail;
 	}
 	public String getNom() {
-		return Nom;
+		return nom;
 	}
 	public void setNom(String nom) {
-		Nom = nom;
+		this.nom = nom;
 	}
 	public String getPassword() {
-		return Password;
+		return password;
 	}
 	public void setPassword(String password) {
-		Password = password;
+		this.password = password;
 	}
 	public String getPrenom() {
-		return Prenom;
+		return prenom;
 	}
 	public void setPrenom(String prenom) {
-		Prenom = prenom;
+		this.prenom = prenom;
 	}
 	public String getTelephone() {
-		return Telephone;
+		return telephone;
 	}
 	public void setTelephone(String telephone) {
-		Telephone = telephone;
+		this.telephone = telephone;
 	}
 	
 	@Override
 	public String toString() {
-		return "utilisateur [Id_Utilisateur=" + Id_Utilisateur + ", Mail=" + Mail + ", Nom="
-				+ Nom + ", Password=" + Password + ", Prenom=" + Prenom + ", Telephone=" + Telephone + "]";
+		return "utilisateur [Id_Utilisateur=" + id_utilisateur + ", Mail=" + mail + ", Nom="
+				+ nom + ", Password=" + password + ", Prenom=" + prenom + ", Telephone=" + telephone + "]";
 	}	
 }
