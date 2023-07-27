@@ -13,27 +13,25 @@ public class categorie {
 	
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int  Id_Categorie;
-    
-    
-	private String Libelle;
+	private int  id_categorie;
+    private String libelle;
 	
 	public int getId_Categorie() {
-		return Id_Categorie;
+		return id_categorie;
 	}
-	public void setId_Categorie(int id_Categorie) {
-		Id_Categorie = id_Categorie;
+	public void setId_Categorie(int id_categorie) {
+		this.id_categorie = id_categorie;
 	}
 	public String getLibelle() {
-		return Libelle;
+		return libelle;
 	}
 	public void setLibelle(String libelle) {
-		Libelle = libelle;
+		this.libelle = libelle;
 	}
 	
 	@Override
 	public String toString() {
-		return "categorie [Id_Categorie=" + Id_Categorie + ", Libelle=" + Libelle + "]";
+		return "categorie [Id_Categorie=" + id_categorie + ", Libelle=" + libelle + "]";
 	}
 	
 	

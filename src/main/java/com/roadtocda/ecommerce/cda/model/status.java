@@ -4,7 +4,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
 @Entity
 
@@ -12,24 +11,26 @@ public class status {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int Id_Status;
-	private String Etat;
+	private int id_status;
+	private String etat;
+	
+	
 	public int getId_Status() {
-		return Id_Status;
+		return id_status;
 	}
 	public void setId_Status(int id_Status) {
-		Id_Status = id_Status;
+		this.id_status = id_Status;
 	}
 	public String getEtat() {
-		return Etat;
+		return etat;
 	}
 	public void setEtat(String etat) {
-		Etat = etat;
+		this.etat = etat;
 	}
 	
 	@Override
 	public String toString() {
-		return "status [Id_Status=" + Id_Status + ", Etat=" + Etat + "]";
+		return "status [Id_Status=" + id_status + ", Etat=" + etat + "]";
 	}
 	
 

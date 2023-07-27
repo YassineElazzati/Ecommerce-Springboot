@@ -12,23 +12,24 @@ public class role {
 	
 	@Id
 	 @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int Id_Role;
-	private String Designation;
+	private int id_role;
+	private String designation;
+	
 	public int getId_Role() {
-		return Id_Role;
+		return id_role;
 	}
 	public void setId_Role(int id_Role) {
-		Id_Role = id_Role;
+		this.id_role = id_Role;
 	}
 	public String getDesignation() {
-		return Designation;
+		return designation;
 	}
 	public void setDesignation(String designation) {
-		Designation = designation;
+		this.designation = designation;
 	}
 	@Override
 	public String toString() {
-		return "role [Id_Role=" + Id_Role + ", Designation=" + Designation + "]";
+		return "role [Id_Role=" + id_role + ", Designation=" + designation + "]";
 	}
 	
 	
