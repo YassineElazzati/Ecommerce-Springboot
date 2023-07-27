@@ -4,12 +4,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="utilisateur")
+@Table(name="utilisateur", schema = "public")
 
-public class utilisateur {
+public class Utilisateur {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,6 +22,17 @@ public class utilisateur {
 	private String Password;
 	private String Prenom;
 	private String Telephone;
+	
+    @ManyToOne // Relation Many-to-One, un article appartient à une catégorie
+    @JoinColumn(name = "id_role") // Clé étrangère pour relier à la catégorie
+    private Role role ;
+
+	public Role getRole() {
+		return role;
+	}
+	public void setRole(Role role) {
+		this.role = role;
+	}
 	
 	public int getId_Utilisateur() {
 		return Id_Utilisateur;
