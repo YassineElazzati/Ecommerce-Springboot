@@ -7,4 +7,5 @@ import com.roadtocda.ecommerce.cda.model.Typearticle;
 @Repository
 public interface TypearticleRepository extends CrudRepository<Typearticle, Long>  {
 
+	
 }

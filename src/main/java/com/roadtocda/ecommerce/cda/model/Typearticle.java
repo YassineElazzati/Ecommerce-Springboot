@@ -12,16 +12,16 @@ public class Typearticle {
 	
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id_Typearticle;
+	private int id_typearticle;
 	private String libelle;
 	private String matiere;
 	private double prix;
 	
 	public int getId_TypeArticle() {
-		return id_Typearticle;
+		return id_typearticle;
 	}
 	public void setId_TypeArticle(int id_TypeArticle) {
-		this.id_Typearticle = id_TypeArticle;
+		this.id_typearticle = id_TypeArticle;
 	}
 	public String getLibelle() {
 		return libelle;
@@ -43,7 +43,7 @@ public class Typearticle {
 	}
 	@Override
 	public String toString() {
-		return "typearticle [Id_TypeArticle=" + id_Typearticle + ", Libelle="
+		return "typearticle [Id_TypeArticle=" + id_typearticle + ", Libelle="
 				+ libelle + ", Matière=" + matiere + ", Prix=" + prix + "]";
 	}
 }

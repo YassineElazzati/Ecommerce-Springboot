@@ -8,8 +8,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.roadtocda.ecommerce.cda.model.Article;
+import com.roadtocda.ecommerce.cda.model.Taille;
 import com.roadtocda.ecommerce.cda.model.Typearticle;
 import com.roadtocda.ecommerce.cda.service.ArticleService;
+import com.roadtocda.ecommerce.cda.service.TailleService;
 import com.roadtocda.ecommerce.cda.service.TypearticleService;
 
 @Controller
@@ -19,6 +21,7 @@ public class ArticleController {
 	private ArticleService ArticleService;
 	@Autowired
 	private TypearticleService typearticleService;
+
 	
 	@GetMapping("/Articles")
 	public Iterable<Article> getArticle(){
@@ -36,4 +39,6 @@ public class ArticleController {
 	public Iterable<Typearticle> getTypearticles(){
 		return typearticleService.getTypearticles();
 	} 
+	
+	
 }
