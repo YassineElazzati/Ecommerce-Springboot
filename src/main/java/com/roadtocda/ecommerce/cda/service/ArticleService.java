@@ -7,13 +7,17 @@ import org.springframework.stereotype.Service;
 
 import com.roadtocda.ecommerce.cda.model.Article;
 import com.roadtocda.ecommerce.cda.repository.ArticleRepository;
+import com.roadtocda.ecommerce.cda.repository.TypearticleRepository;
 
 @Service
 public class ArticleService {
 
-<<<<<<< HEAD
+
 		@Autowired
 		private ArticleRepository artRepository;
+		
+		@Autowired
+		private TypearticleRepository typearticleRepository;
 		
 		public Optional<Article>getArticle(final long id ){
 			return artRepository.findById(id);
@@ -30,14 +34,9 @@ public class ArticleService {
 			return savedArticle;
 		}
 
-
-
-
-}
-=======
 	public Iterable<Article> getArticle() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 }
->>>>>>> 56e618b41eec1e1c5ec96a215a6ca213449641dd
+
