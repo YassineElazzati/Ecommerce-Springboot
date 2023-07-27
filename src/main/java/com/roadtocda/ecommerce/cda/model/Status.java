@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 
 @Entity
 
-public class status {
+public class Status {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,8 +18,8 @@ public class status {
 	public int getId_Status() {
 		return id_status;
 	}
-	public void setId_Status(int id_Status) {
-		this.id_status = id_Status;
+	public void setId_Status(int id_status) {
+		this.id_status = id_status;
 	}
 	public String getEtat() {
 		return etat;

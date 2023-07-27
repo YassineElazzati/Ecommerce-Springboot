@@ -6,7 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.roadtocda.ecommerce.cda.model.Article;
+import com.roadtocda.ecommerce.cda.model.Taille;
 import com.roadtocda.ecommerce.cda.repository.ArticleRepository;
+import com.roadtocda.ecommerce.cda.repository.TailleRepository;
 import com.roadtocda.ecommerce.cda.repository.TypearticleRepository;
 
 @Service
@@ -18,6 +20,10 @@ public class ArticleService {
 		
 		@Autowired
 		private TypearticleRepository typearticleRepository;
+		
+		@Autowired
+		private TailleRepository taille;
+		
 		
 		public Optional<Article>getArticle(final long id ){
 			return artRepository.findById(id);
@@ -34,9 +40,8 @@ public class ArticleService {
 			return savedArticle;
 		}
 
-	public Iterable<Article> getArticle() {
-		// TODO Auto-generated method stub
-		return null;
+		public Iterable<Article> getArticle() {
+			return null;
 	}
 }
 

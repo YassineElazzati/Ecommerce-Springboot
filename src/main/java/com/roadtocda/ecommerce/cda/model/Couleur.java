@@ -7,33 +7,40 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="categorie")
-public class categorie {
+@Table(name="couleur")
+public class Couleur {
 	
-	
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int  id_categorie;
-    private String libelle;
-	
-	public int getId_Categorie() {
-		return id_categorie;
+	@Id
+	 @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id_couleur;
+	private String libelle;
+
+
+	public int getId_Couleur() {
+		return id_couleur;
 	}
-	public void setId_Categorie(int id_categorie) {
-		this.id_categorie = id_categorie;
+
+
+	public void setId_Couleur(int id_couleur) {
+		this.id_couleur = id_couleur;
 	}
+
+
 	public String getLibelle() {
 		return libelle;
 	}
+
+
 	public void setLibelle(String libelle) {
 		this.libelle = libelle;
 	}
-	
+
+
 	@Override
 	public String toString() {
-		return "categorie [Id_Categorie=" + id_categorie + ", Libelle=" + libelle + "]";
+		return "couleur [Id_Couleur=" + id_couleur + ", Libelle=" + libelle + "]";
 	}
 	
 	
-	
+
 }
