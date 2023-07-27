@@ -16,7 +16,6 @@
 	      <li th:each="article : ${LesArticles}">
 	        <h3 th:text="${article.typearticle.libelle}"></h3>
 	        <p th:text="${article.quantitestock}"></p>
-            <p th:text="{article.taillearticle}"></p>
 	      </li>
     </ul>
         <p>Welcome to the Spring Boot Thymeleaf example post Get started quickly by signing up.</p>

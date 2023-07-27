@@ -10,9 +10,7 @@ public class ecommercecdaApplication {
 		SpringApplication.run(ecommercecdaApplication.class, args);
 		
 		
-		
 	}
-
 }
 
 
