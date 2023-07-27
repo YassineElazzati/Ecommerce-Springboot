@@ -19,18 +19,14 @@ public class Taille {
 	public int getId_Taille() {
 		return id_taille;
 	}
-
-
-	public void setId_Taille(int id_Taille) {
-		this.id_taille = id_Taille;
+	public void setId_Taille(int id_taille) {
+		this.id_taille = id_taille;
 	}
 
 
 	public String getLibelle() {
 		return libelle;
 	}
-
-
 	public void setLibelle(String libelle) {
 		this.libelle = libelle;
 	}

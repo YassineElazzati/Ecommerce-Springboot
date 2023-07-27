@@ -22,8 +22,8 @@ public class Panier {
 	}
 
 
-	public void setId_Article(int id_Article) {
-		this.id_article = id_Article;
+	public void setId_Article(int id_article) {
+		this.id_article = id_article;
 	}
 
 
@@ -32,8 +32,8 @@ public class Panier {
 	}
 
 
-	public void setId_Utilisateur(int id_Utilisateur) {
-		this.id_utilisateur = id_Utilisateur;
+	public void setId_Utilisateur(int id_utilisateur) {
+		this.id_utilisateur = id_utilisateur;
 	}
 
 

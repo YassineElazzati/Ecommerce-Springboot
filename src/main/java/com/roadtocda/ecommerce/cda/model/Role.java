@@ -18,8 +18,8 @@ public class Role {
 	public int getId_Role() {
 		return id_role;
 	}
-	public void setId_Role(int id_Role) {
-		this.id_role = id_Role;
+	public void setId_Role(int id_role) {
+		this.id_role = id_role;
 	}
 	public String getDesignation() {
 		return designation;

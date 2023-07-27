@@ -21,8 +21,8 @@ public class Couleur {
 	}
 
 
-	public void setId_Couleur(int id_Couleur) {
-		this.id_couleur = id_Couleur;
+	public void setId_Couleur(int id_couleur) {
+		this.id_couleur = id_couleur;
 	}
 
 
