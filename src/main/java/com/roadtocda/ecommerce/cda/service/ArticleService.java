@@ -43,5 +43,17 @@ public class ArticleService {
 		public Iterable<Article> getArticle() {
 			return null;
 	}
+		public TypearticleRepository getTypearticleRepository() {
+			return typearticleRepository;
+		}
+		public void setTypearticleRepository(TypearticleRepository typearticleRepository) {
+			this.typearticleRepository = typearticleRepository;
+		}
+		public TailleRepository getTaille() {
+			return taille;
+		}
+		public void setTaille(TailleRepository taille) {
+			this.taille = taille;
+		}
 }
 

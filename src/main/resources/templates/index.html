@@ -14,8 +14,12 @@
         <h1><p th:text="'Hello, ' + ${name} + '!'"></p></h1>
         <ul>
 	      <li th:each="article : ${LesArticles}">
+            <h2 th:text="${article.image}"></h2>
 	        <h3 th:text="${article.typearticle.libelle}"></h3>
-	        <p th:text="${article.quantitestock}"></p>
+	        <p th:text="'Matiere : ' + ${article.typearticle.matiere}"></p>
+	        <p th:text="'Prix : ' + ${article.typearticle.prix}"></p>
+	        <p th:text="'Taille : ' + ${article.taille.libelle}"></p>
+	        <p th:text="'Quantité : ' + ${article.quantitestock}"></p>
 	      </li>
     </ul>
         <p>Welcome to the Spring Boot Thymeleaf example post Get started quickly by signing up.</p>

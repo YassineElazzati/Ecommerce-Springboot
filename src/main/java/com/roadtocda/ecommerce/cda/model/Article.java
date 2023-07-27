@@ -51,6 +51,14 @@ public class Article {
 	public void setTypearticle(Typearticle typearticle) {
 		this.typearticle = typearticle;
 	}
+	
+	public Taille getTaille() {
+		return taille;
+	}
+	public void setTaille(Taille taille) {
+		this.taille = taille;
+	}
+	
 	@Override
 	public String toString() {
 		return "Article [Id_Article=" + id_article + ", Image=" + image + ", QuantitéStock=" + quantitestock
