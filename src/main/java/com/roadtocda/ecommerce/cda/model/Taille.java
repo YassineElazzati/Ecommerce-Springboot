@@ -12,35 +12,33 @@ public class Taille {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int Id_Taille;
-	
-	
-	private String Libelle;
+	private int id_taille;
+	private String libelle;
 
 
 	public int getId_Taille() {
-		return Id_Taille;
+		return id_taille;
 	}
 
 
 	public void setId_Taille(int id_Taille) {
-		Id_Taille = id_Taille;
+		this.id_taille = id_Taille;
 	}
 
 
 	public String getLibelle() {
-		return Libelle;
+		return libelle;
 	}
 
 
 	public void setLibelle(String libelle) {
-		Libelle = libelle;
+		this.libelle = libelle;
 	}
 
 
 	@Override
 	public String toString() {
-		return "taille [Id_Taille=" + Id_Taille + ", Libelle=" + Libelle + "]";
+		return "taille [Id_Taille=" + id_taille + ", Libelle=" + libelle + "]";
 	}
 	
 		

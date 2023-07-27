@@ -12,35 +12,33 @@ public class Couleur {
 	
 	@Id
 	 @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int Id_Couleur;
-
-	
-	private String Libelle;
+	private int id_couleur;
+	private String libelle;
 
 
 	public int getId_Couleur() {
-		return Id_Couleur;
+		return id_couleur;
 	}
 
 
 	public void setId_Couleur(int id_Couleur) {
-		Id_Couleur = id_Couleur;
+		this.id_couleur = id_Couleur;
 	}
 
 
 	public String getLibelle() {
-		return Libelle;
+		return libelle;
 	}
 
 
 	public void setLibelle(String libelle) {
-		Libelle = libelle;
+		this.libelle = libelle;
 	}
 
 
 	@Override
 	public String toString() {
-		return "couleur [Id_Couleur=" + Id_Couleur + ", Libelle=" + Libelle + "]";
+		return "couleur [Id_Couleur=" + id_couleur + ", Libelle=" + libelle + "]";
 	}
 	
 	
