@@ -78,8 +78,5 @@ public class Article {
 		return "Article [Id_Article=" + id_article + ", Image=" + image + ", QuantitéStock=" + quantitestock
 				;
 	}
-<<<<<<< HEAD
-=======
-	
->>>>>>> b2f33ffd18ce6ff95169a0bbeadb649390218cce
+
 }
