@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -20,6 +22,16 @@ public class Utilisateur {
 	private String prenom;
 	private String telephone;
 	
+	@ManyToOne
+	@JoinColumn(name = "id_role")
+	private Role role;
+	
+	public Role getRole() {
+		return role;
+	}
+	public void setRole(Role role) {
+		this.role = role;
+	}
 	public int getId_Utilisateur() {
 		return id_utilisateur;
 	}

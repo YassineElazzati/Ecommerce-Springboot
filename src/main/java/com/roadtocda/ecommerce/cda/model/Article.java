@@ -17,14 +17,13 @@ public class Article {
     private int id_article;
     private String image ; 
     private String quantitestock;
-    
+
     @ManyToOne // Relation Many-to-One, un article appartient à une catégorie
     @JoinColumn(name = "id_type_article") // Clé étrangère pour relier à la catégorie
     private Typearticle typearticle ;
     @ManyToOne
     @JoinColumn(name = "id_taille")
     private Taille taille;
-    
     
 	public int getId_article() {
 		return id_article;
@@ -63,5 +62,5 @@ public class Article {
 	public String toString() {
 		return "Article [Id_Article=" + id_article + ", Image=" + image + ", QuantitéStock=" + quantitestock
 				;
-	}	    
+	}
 }
