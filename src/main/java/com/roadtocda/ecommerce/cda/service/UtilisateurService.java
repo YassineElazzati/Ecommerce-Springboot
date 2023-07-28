@@ -32,5 +32,13 @@ public class UtilisateurService {
 				Utilisateur savedUtilisateur = utilisateurRepository.save(Utilisateur);
 				return savedUtilisateur;
 		}
+
+		public RoleRepository getRoleRepository() {
+			return roleRepository;
+		}
+
+		public void setRoleRepository(RoleRepository roleRepository) {
+			this.roleRepository = roleRepository;
+		}
 	
 }
