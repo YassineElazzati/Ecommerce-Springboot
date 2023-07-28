@@ -20,12 +20,12 @@
               <p th:text="'Matiere : ' + ${article.typearticle.matiere}"></p>
               <p th:text="'Prix : ' + ${article.typearticle.prix} + '€'"></p>
               <p th:text="'Taille : ' + ${article.taille.libelle}"></p>
+              <p th:text="'Taille : ' + ${article.couleur.libelle}"></p>
               <p th:text="'Quantité : ' + ${article.quantitestock}"></p>
             </div>
         </div>
       </div>
       <a href="/typearticle.html" th:href="@{/TypeArticle}" class="btn btn-large btn-primary">Type Article</a>
-      <a href="/index.html" class="btn btn-large btn-primary">Accueil</a>
       </p>
     </div>
 </body>

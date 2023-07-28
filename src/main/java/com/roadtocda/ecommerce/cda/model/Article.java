@@ -24,6 +24,9 @@ public class Article {
     @ManyToOne
     @JoinColumn(name = "id_taille")
     private Taille taille;
+    @ManyToOne
+    @JoinColumn(name = "id_couleur")
+    private Couleur couleur;
     
     
 	public int getId_article() {
@@ -45,6 +48,8 @@ public class Article {
 		quantitestock = quantiteStock;
 	}
 	
+	
+	
 	public Typearticle getTypearticle() {
 		return typearticle;
 	}
@@ -59,9 +64,20 @@ public class Article {
 		this.taille = taille;
 	}
 	
+	public Couleur getCouleur() {
+		return couleur;
+	}
+	public void setCouleur(Couleur couleur) {
+		this.couleur = couleur;
+	}	    
+	
+	
+	
+	
 	@Override
 	public String toString() {
 		return "Article [Id_Article=" + id_article + ", Image=" + image + ", QuantitéStock=" + quantitestock
 				;
-	}	    
+	}
+	
 }

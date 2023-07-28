@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.roadtocda.ecommerce.cda.model.Article;
-import com.roadtocda.ecommerce.cda.model.Taille;
 import com.roadtocda.ecommerce.cda.repository.ArticleRepository;
+import com.roadtocda.ecommerce.cda.repository.CouleurRepository;
 import com.roadtocda.ecommerce.cda.repository.TailleRepository;
 import com.roadtocda.ecommerce.cda.repository.TypearticleRepository;
 
@@ -23,6 +23,9 @@ public class ArticleService {
 		
 		@Autowired
 		private TailleRepository tailleRepository;
+		
+		@Autowired
+		private CouleurRepository coulRepository;
 		
 		
 		public Optional<Article>getArticle(final long id ){
@@ -55,6 +58,12 @@ public class ArticleService {
 		}
 		public void setTailleRepository(TailleRepository tailleRepository) {
 			this.tailleRepository = tailleRepository;
+		}
+		public CouleurRepository getCoulRepository() {
+			return coulRepository;
+		}
+		public void setCoulRepository(CouleurRepository coulRepository) {
+			this.coulRepository = coulRepository;
 		}
 }
 
