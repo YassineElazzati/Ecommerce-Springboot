@@ -4,29 +4,38 @@
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link rel="stylesheet" th:href="@{/css/style.css}" />
+  <link rel="stylesheet" href="/src/main/resources/static/css/style.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="hero-unit">
-      <h1>
-        <p th:text="'Hello, ' + ${name} + '!'"></p>
-      </h1>
-      <div class="card" style="width: 100%;"> 
-        <div class="card-body">
-            <div th:each="article : ${LesArticles}" >
-              <h2 th:text="${article.image}" class="text-primary"></h2>
-              <h3 th:text="${article.typearticle.libelle}"></h3>
-              <p th:text="'Matiere : ' + ${article.typearticle.matiere}"></p>
-              <p th:text="'Prix : ' + ${article.typearticle.prix} + '€'"></p>
-              <p th:text="'Taille : ' + ${article.taille.libelle}"></p>
-              <p th:text="'Taille : ' + ${article.couleur.libelle}"></p>
-              <p th:text="'Quantité : ' + ${article.quantitestock}"></p>
-            </div>
-        </div>
+  <header>
+    <a href="./index.html" class="logo" id="logo">
+      CDA
+    </a>
+    <div class="menu-burger" id="menu-burger">
+      <div class="nav-link">
+        <a href="/Article">Article</a>
+        <a href="/TypeArticle">Type Article</a>
       </div>
-      <a href="/typearticle.html" th:href="@{/TypeArticle}" class="btn btn-large btn-primary">Type Article</a>
-      </p>
     </div>
+  </header>
+  <h1 class="titre-page">
+    Les Articles
+  </h1>
+  <main>
+    <div class="card" th:each="article : ${LesArticles}">
+      <h2 th:text="${article.image}" class="text-primary"></h2>
+      <h3 th:text="${article.typearticle.libelle}"></h3>
+      <p th:text="'Matiere : ' + ${article.typearticle.matiere}"></p>
+      <p th:text="'Prix : ' + ${article.typearticle.prix} + '€'"></p>
+      <p th:text="'Taille : ' + ${article.taille.libelle}"></p>
+      <p th:text="'Taille : ' + ${article.couleur.libelle}"></p>
+      <p th:text="'Quantité : ' + ${article.quantitestock}"></p>
+    </div>
+  </p>
+  <a href="/typearticle.html" th:href="@{/TypeArticle}" class="btn btn-large btn-primary">Type Article</a>
+  </main>
 </body>
+
 </html>
