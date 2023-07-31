@@ -1,6 +1,5 @@
 # Ecommerce-Springboot
 
-# DAO
 
 ## Presentation
 
