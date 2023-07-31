@@ -15,12 +15,14 @@ This project was advised to us by our Mentor Nah_ben.
 
 First of all we do a MLD and MCD to optimise a maximum our code and try to not forgot something important.(Looping)
 After that we take the script and we put that on PHP My Admin.
+Then we decide to take de BDD on Neon to make it easy the share and the update.
 
 ## Installation of the project 
 
 We using Spring intialzr for intialize our project 
 
 <img width="1282" alt="Capture d’écran 2023-07-20 à 16 33 41" src="https://github.com/YassineElazzati/Ecommerce-Springboot/assets/131854031/9370eeae-b1ef-4e39-b23e-428753ba122d">
+
 
 ## Licence
 
