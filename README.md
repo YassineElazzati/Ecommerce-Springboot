@@ -13,9 +13,9 @@ This project was advised to us by our Mentor Nah_ben.
 
 ## Sturcture of the project
 
-First of all we do a MLD and MCD to optimise a maximum our code and try to not forgot something important.(Looping)
+First of all we do a MLD and MCD to optimise a maximum our code and try to not forgot something important.(With Looping)
 After that we take the script and we put that on PHP My Admin.
-Then we decide to take de BDD on Neon to make it easy the share and the update.
+Then we decide to make easy the share and update of the BDD to put that in Neon ( BDD online)
 
 ## Installation of the project 
 
