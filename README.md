@@ -3,7 +3,7 @@
 
 ## Presentation
 
-The purpose of this project was to create a website from A to Z.
+The purpose of this project was to create a website e-commerce from A to Z.
 
 This project was advised to us by our Mentor Nah_ben.
 
