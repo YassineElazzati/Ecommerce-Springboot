@@ -24,6 +24,11 @@ public class ArticleController {
 	public Iterable<Article> getArticle(){
 		return ArticleService.getArticles();
 	}
+	@GetMapping("/TypeArticles")
+	public Iterable<Typearticle> getTypearticles(){
+		return typearticleService.getTypearticles();
+	}
+	
 	
 	@GetMapping("/Article")
     public String Article(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
@@ -31,17 +36,11 @@ public class ArticleController {
 		model.addAttribute("LesArticles", ArticleService.getArticles());
         return "article";
     }
-	@GetMapping("/TypeArticles")
-	public Iterable<Typearticle> getTypearticles(){
-		return typearticleService.getTypearticles();
-	}
-	
+
 	@GetMapping("/TypeArticle")
 	public String TypeArticle(@RequestParam(name="name", required = false, defaultValue = "ehehe") String name, Model model) {
 		model.addAttribute("name", name);
 		model.addAttribute("LesTypes", typearticleService.getTypearticles());
 		return "typearticle";
 	}
-
-	
 }

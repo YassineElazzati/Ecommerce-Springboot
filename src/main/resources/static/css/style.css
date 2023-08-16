@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *,
 ::before,
 ::after{
@@ -19,7 +18,7 @@ header {
     justify-content: space-between;
     padding: 40px;
     text-transform: uppercase;
-    font-family: 'Oranienbaum', serif;
+    font-family: 'Bodoni Moda', serif;
 }
 header .logo{
     color: black;
@@ -50,13 +49,32 @@ body main{
     justify-content: center;
 }
 body h1.titre-page{
-    font-family: 'Oranienbaum', serif;
-    font-size: 7em;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 5em;
     display: flex;
+    font-weight: 200;
     justify-content: center;
+    margin: 40px 0;
 }
 body .card{
-    width: 30%;
-    border: 1px solid #000;
+    width: 20%;
+    border: 1px solid #000000;
+    height: 40%;
+    margin: 20px;
+    font-family: 'Inter', sans-serif;
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.card .block-text-card{
     padding: 20px;
+}
+.card .block-text-card h3 {
+    text-align: center;
+}
+.card .block-text-card p{
+    margin: 5px 0;
+    font-size: 0.8em;
 }
